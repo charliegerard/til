@@ -15,7 +15,7 @@ function Computer(model, size, age, price){
   this.price = price;
 
   this.toString = function(){
-    return "My computer is a " + this.model + ", is " + this.size + " big, " + this.age + " old and cost me $" + this.price.
+    return "My computer is a " + this.model + ", is " + this.size + " big, " + this.age + " old and cost me $" + this.price
   }
 }
 
@@ -46,8 +46,8 @@ Computer.prototype.toString = function(){
 
 //Usage
 
-var mac = new myComputer("Mac", "15inch", "2 years", 1000);
-var pc = new myComputer("Chromebook", "13inch", "1 year", 500);
+var mac = new Computer("Mac", "15inch", "2 years", 1000);
+var pc = new Computer("Chromebook", "13inch", "1 year", 500);
 
 console.log(mac.toString());
 console.log(pc.toString());
